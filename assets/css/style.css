@@ -1,2 +1,190 @@
-/* font-family: 'Poppins', sans-serif; */
+/* ================ RESETS =============== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--colorFondo);
+}
+
+a{
+    text-decoration: none;
+}
+
+a.visited {
+    color: rgb(0, 0, 0);
+}
+
+a:active {
+    color: rgb(0, 0, 0);
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+
+/* ================ VARIABLES =============== */
+
+:root {
+    /* ============ COLORES == */
+    --colorFondo: #FEEEE9;
+    --colorRelleno: #F1D4CE;
+    --colorTitulos: #002441;
+
+
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Radley', serif;
+
+    /* ============ TIPOGRAFIAS == */
+    --fontTitulo: 'League Spartan', sans-serif;
+    --fontNavbar: 'Poppins', sans-serif;
+    --fontDetalles: 'Radley', serif;
+
+    /* ============ TAMAÑOS == */
+    --fontSize_titulo: 3rem;
+    --fontSize_navbar: 2rem;
+    --fontSize_texto: 1rem;
+}
+
+
+
+/* ================ LandingPage =============== */
+.containerPrincipal {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 1.5em;
+    height: 100vh;
+}
+
+
+/* ================ MENU =============== */
+.containerPrincipal .menu img {
+    width: 200px;
+    height: 70px;
+}
+
+/* Esto hay que sacarlo */
+.containerPrincipal>div:hover {
+    border: 1px solid rgb(247, 204, 29);
+}
+
+.menu {
+    margin-top: 80px;
+    height: 80%;
+    /* border: 1px solid slateblue; */
+    padding-left: 20px;
+    padding-right: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.containerPrincipal .menu div>a {
+    font-family: var(--fontNavbar);
+    font-size: var(--fontSize_navbar);
+    font-weight: 500;
+    color: var(--colorTitulos);
+    padding: 1rem;
+    border-radius: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.containerPrincipal .menu .navbar>a:hover {
+    background-color: var(--colorRelleno);
+    color: var(--colorTitulos);
+    transform: scale(1.1); 
+    transition: .5s; 
+    border-radius: 1rem;
+}
+
+.navbar {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 450px;
+    justify-content: space-evenly;
+}
+
+.containerRedes{
+    display: flex;
+    gap: 20px;
+}
+
+.fa-linkedin, .fa-github{
+    font-size: 30px;
+}
+
+.containerRedes .enlaces{
+    transition: box-shadow 0.4s; 
+}
+
+.containerRedes >.enlaces:hover{
+    box-shadow: 0 0 20px 5px #F1D4CE; 
+}
+
+
+/*======= LADO DERECHO */
+.container {
+    background-color: var(--colorRelleno);
+    border-radius: 40px;
+    margin: 60px 60px 60px 0px;
+    position: relative;
+}
+
+.cv{
+    position: absolute;
+    top: 59px;
+    left: 1400px;
+    font-size: 5rem;
+
+}
+
+hgroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 80vh;
+    gap: 90px
+}
+
+#titulo{
+    font-family: var(--fontTitulo);
+    font-size: 10rem;
+    font-weight: 600;
+    color: var(--colorTitulos);
+}
+
+h2{
+    font-family: var(--fontTitulo);
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--colorTitulos);
+}
+
+#tituloHola{
+    font-family: var(--fontTitulo);
+    font-size: 10rem;
+    font-weight: 600;
+    color: var(--colorTitulos);
+
+}
+
+/* id="tituloArriba" */
