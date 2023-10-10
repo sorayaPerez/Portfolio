@@ -15,8 +15,15 @@
     <!--====================== GOOGLE FONTS    =================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Radley&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Radley&display=swap"
+        rel="stylesheet">
 
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Swiper.js JavaScript -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -27,7 +34,7 @@
             <figure>
                 <img src="./assets/img/logosoraya.png" alt="">
             </figure>
-            
+
             <div class="navbar">
                 <a class="enlaces" href=""> <i class="fa-solid fa-house"></i> Inicio </a>
                 <a class="enlaces" href=""> <i class="fa-solid fa-user"></i> Sobre Mi </a>
@@ -37,20 +44,47 @@
 
             <div class="containerRedes">
                 <a class="enlaces" href="https://github.com/sorayaPerez"> <i class="fa-brands fa-github"></i> </a>
-                <a class="enlaces" href="https://www.linkedin.com/in/sorayaperezin/"> <i class="fa-brands fa-linkedin"></i> </a>
+                <a class="enlaces" href="https://www.linkedin.com/in/sorayaperezin/"> <i
+                        class="fa-brands fa-linkedin"></i> </a>
             </div>
         </nav>
 
+
         <!-- ======== Lado derecho -->
-
         <section class="container">
-            <div class="cv"> <a href=""> * <i class="fa-solid fa-file"></i>  </a> </div>
 
-            <hgroup>
-                <h2> <span id="tituloHola">Hola,</span> me dicen Sori y soy una</h2>
-                <h1 id="titulo"> Full stack Developer  <span class="junior"> Jr</span></h1>
-            </hgroup>
-        </section>
+            <section> <!-- ======== Landing Page -->
+                <div class="cv">
+                    <a href=""> * <i class="fa-solid fa-file"></i> </a>
+                </div>
+    
+                <hgroup>
+                    <h2> <span id="tituloHola">Hola,</span> me dicen Sori y soy una</h2>
+                    <h1 id="titulo"> Full stack Developer <span class="junior"> Jr</span></h1>
+                </hgroup>
+    
+                <div class="experienciaCv">
+                    <p>* Conocé mi experiencia</p>
+                </div>
+            </section>
+
+
+            <section class="sobreMi"> <!-- ======== Sobre Mi -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="imagen1.jpg" alt="Imagen 1"></div>
+                        <div class="swiper-slide"><img src="imagen2.jpg" alt="Imagen 2"></div>
+                        <div class="swiper-slide"><img src="imagen3.jpg" alt="Imagen 3"></div>
+                    </div>
+                
+                    <!-- Flechas de navegación -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section> <!-- ======== FIN Sobre Mi -->
+
+
+        </section> <!-- ======== Lado derecho -->
     </section>
 
 </body>

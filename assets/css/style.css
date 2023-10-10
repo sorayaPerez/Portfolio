@@ -15,7 +15,7 @@ body {
     background-color: var(--colorFondo);
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -27,9 +27,14 @@ a:active {
     color: rgb(0, 0, 0);
 }
 
-h1,h2,h3,h4,h5,h6 {
-	font-size:100%;
-	font-weight:normal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
 }
 
 /* ================ VARIABLES =============== */
@@ -106,8 +111,8 @@ h1,h2,h3,h4,h5,h6 {
 .containerPrincipal .menu .navbar>a:hover {
     background-color: var(--colorRelleno);
     color: var(--colorTitulos);
-    transform: scale(1.1); 
-    transition: .5s; 
+    transform: scale(1.1);
+    transition: .5s;
     border-radius: 1rem;
 }
 
@@ -121,21 +126,22 @@ h1,h2,h3,h4,h5,h6 {
     justify-content: space-evenly;
 }
 
-.containerRedes{
+.containerRedes {
     display: flex;
     gap: 20px;
 }
 
-.fa-linkedin, .fa-github{
+.fa-linkedin,
+.fa-github {
     font-size: 30px;
 }
 
-.containerRedes .enlaces{
-    transition: box-shadow 0.4s; 
+.containerRedes .enlaces {
+    transition: box-shadow 0.4s;
 }
 
-.containerRedes >.enlaces:hover{
-    box-shadow: 0 0 20px 5px #F1D4CE; 
+.containerRedes>.enlaces:hover {
+    box-shadow: 0 0 20px 5px #F1D4CE;
 }
 
 
@@ -147,39 +153,41 @@ h1,h2,h3,h4,h5,h6 {
     position: relative;
 }
 
-.cv{
-    position: absolute;
-    top: 59px;
-    left: 1400px;
-    font-size: 5rem;
+.cv {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: end;
 
+    width: 90%;
+    margin-top: 70px;
+    font-size: 6rem;
 }
 
-hgroup{
+hgroup {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    height: 80vh;
+    height: 47vh;
     gap: 90px
 }
 
-#titulo{
+#titulo {
     font-family: var(--fontTitulo);
     font-size: 10rem;
     font-weight: 600;
     color: var(--colorTitulos);
 }
 
-h2{
+h2 {
     font-family: var(--fontTitulo);
     font-size: 3.5rem;
     font-weight: 600;
     color: var(--colorTitulos);
 }
 
-#tituloHola{
+#tituloHola {
     font-family: var(--fontTitulo);
     font-size: 10rem;
     font-weight: 600;
@@ -187,4 +195,15 @@ h2{
 
 }
 
-/* id="tituloArriba" */
+
+
+.experienciaCv{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    width: 90%;
+    margin-top: 100px;
+    font-size: 3rem;
+    padding: 10px;
+    margin-left: 50px;
+}
