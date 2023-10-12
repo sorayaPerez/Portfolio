@@ -27,6 +27,10 @@
 
     <!-- JAVASCRIPT -->
     <script defer src="./assets/js/main.js"></script>
+    <script defer src="./assets/js/nav.js"></script>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/img/flor.ico" type="image/x-icon">
 
 </head>
 
@@ -34,64 +38,60 @@
 
     <main class="containerPrincipal">
         <!-- ======== Lado izquierdo -->
-        <nav class="menu">
+        <header class="menu">
             <figure>
                 <img src="./assets/img/logosoraya.png" alt="">
             </figure>
-
-            <div class="navbar">
-                <a class="enlaces" href=""> <i class="fa-solid fa-house"></i> Inicio </a>
-                <a class="enlaces" href=""> <i class="fa-solid fa-user"></i> Sobre Mi </a>
-                <a class="enlaces" href=""> <i class="fa-solid fa-laptop-code"></i> Proyectos </a>
-                <a class="enlaces" href=""> <i class="fa-solid fa-envelope"></i> Contacto </a>
-            </div>
-
+            <nav class="navbar">
+                <a class="enlaces" href="#inicio"> <i class="fa-solid fa-house"></i> Inicio </a>
+                <a class="enlaces" href="#sobremi"> <i class="fa-solid fa-user"></i> Sobre Mi </a>
+                <a class="enlaces" href="#proyectos"> <i class="fa-solid fa-laptop-code"></i> Proyectos </a>
+                <a class="enlaces" href="#contacto"> <i class="fa-solid fa-envelope"></i> Contacto </a>
+            </nav>
             <div class="containerRedes">
-                <a class="enlaces" href="https://github.com/sorayaPerez" target="_blank"> <i
-                        class="fa-brands fa-github"></i> </a>
-                <a class="enlaces" href="https://www.linkedin.com/in/sorayaperezin/" target="_blank"> <i
-                        class="fa-brands fa-linkedin"></i> </a>
+                <a class="enlaces" href="https://github.com/sorayaPerez" target="_blank"> <i class="fa-brands fa-github"></i> </a>
+                <a class="enlaces" href="https://www.linkedin.com/in/sorayaperezin/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
             </div>
-        </nav>
+        </header>
 
 
         <!-- ======== Lado derecho -->
         <section class="fixedContainer">
-
-            <section class="home"> <!-- ======== Landing Page -->
+            <section id="inicio"  class="home menujs"> <!-- ======== Landing Page -->
                 <div class="cv">
-                    <a href=""> * <i class="fa-solid fa-file"></i> </a>
+                    <a href="./assets/pdf/Soraya Perez.pdf" target="_blank"> * <i class="fa-solid fa-file"></i> </a>
                 </div>
-
                 <hgroup>
                     <h2> <span id="tituloHola">Hola,</span> me dicen Sori y soy una</h2>
                     <h1 id="titulo"> Full stack Developer <span class="junior"> Jr</span></h1>
                 </hgroup>
-
                 <div class="experienciaCv">
                     <p>* Conocé mi experiencia</p>
                 </div>
             </section>
 
-            <section class="sobreMiUno"> <!-- ======== Sobre Mi -->
+
+
+
+            <section id="sobremi" class="sobreMi sobreMiUno menujs"> <!-- ======== Sobre Mi -->
                 <h2>Soraya Perez</h2>
                 <div class="cocoonSobreMi">
                     <div class="infoSobreMi">
-                        <img src="./assets/img/imagen1.png" alt="Foto Soraya Perez">
+                        <img src="./assets/img/profile-pic.png" alt="Foto Soraya Perez">
                         <div class="textoSobreMi">
-                            <p>Apasionada de lo que hago, busco en cada línea de código el potencial de marcar una
-                                diferencia significativa en la vida de las personas.</p>
+                            <p>  Apasionada de lo que hago, busco en cada línea de código el potencial de marcar una
+                                diferencia significativa en la vida de las personas. </p>
                             <div class="videoCv">
-                                <p class="infoConocerme"> ¡Te invito a conocerme un poquito más!</p>
+                                <p class="infoConocerme typing-demo"> ¡Te invito a conocerme un poquito más!</p>
                                 <span>Video CV</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section> <!-- ======== Fin Sobre Mi -->
+            </section> <!-- ======== Fin Sobre Mi UNO-->
 
 
-            <div class="sobreMiDos"> <!-- ======== Sobre Mi 2-->
+            <section class="sobreMi sobreMiDos"> <!-- ======== Sobre Mi 2-->
                 <h2>Sobre Mi</h2>
                 <div class="tabInfo">
                     <div class="tabs">
@@ -100,33 +100,40 @@
                     </div>
                     <div class="tab-content">
                         <div class="active">
-                            <h4>First Title</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                                explicabo cum dolores hic possimus aut corrupti quisquam aperiam
-                                quia veniam inventore officiis nam error sunt libero, commodi
-                                architecto reiciendis qui fuga, itaque delectus quidem sequi.
-                                Impedit natus culpa nihil aperiam adipisci aliquam error, suscipit
-                                odio? Error sed esse perspiciatis quasi velit, ratione odit
-                                architecto? Explicabo pariatur.
-                            </p>
+                            <h4>¡Holo Mundo!</h4>
+                            <p> • Como programadora <span class="floresSpan">MERN</span> , mi principal prioridad es la excelencia en la estructura del código, la claridad y la experiencia del usuario.</p>
+                            <br><br>
+                            <p> • Mi pasión por lo que hago se refleja en mi dedicación constante a la adquisición de nuevos conocimientos y habilidades. Me sumerjo en <span class="floresSpan">las mejores prácticas, la escalabilidad y la optimización</span>, siempre en busca de superar mis propios estándares.</p>
+                            <br><br>
+                            <p> ► Mi meta es ser parte de <span class="floresSpan"> proyectos innovadores y desafiantes </span> que pongan a prueba los límites de mis conocimientos y habilidades. Y si no los encuentro, estoy dispuesta a crearlos yo misma.</p>
+                            <br><br><br>
+                            <p class="textoCentrado">Te invito a comprobar mi compromiso y experiencia a través de mis <span class="floresSpan">proyectos</span> .</p>
+
+                            
                         </div>
-                        <div>
-                            <h4>Second Title</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti,
-                                fugiat ab? Accusamus sed a iusto? Placeat incidunt repudiandae vero
-                                magnam nihil tempore quasi earum illum totam aut delectus aliquam
-                                pariatur, iste, qui provident quo voluptatem neque facere id
-                                laudantium aliquid numquam nisi accusantium. Inventore reiciendis
-                                nulla, iste perferendis.
-                            </p>
+                        <div class="sobreMiFlores">
+                            <h4> A tirarme 🌺</h4>
+                            <p>Ser desarolladora me permite vincular 4 cosas que  <span class="floresSpan">me definen como persona:</span> </p>
+                            <br>
+                            <p class="textoCentrado"> 🎨 Mi lado artistico</p>
+                            <p class="textoCentrado"> 🤝Ayudar a las personas</p>
+                            <p class="textoCentrado"> 📚 Desafios constantes</p>
+                            <p class="textoCentrado"> 👋 Conocer gente</p>
+                            <br>
+                            <p> 👉Me encanta compartir mi camino con otros Devs y aprender tanto como pueda de ellos. <span class="floresSpan"> Mi entusiasmo, calidez y pasión </span>  son recursos que aporto en cada interacción. </p>
+                            <br><br>
+                            <p class="textoCentrado">Y sí... mis conocimientos también!</p> 
+                            <br><br>
+                            <p>👉 Mi objetivo principal es ser un <span class="floresSpan">agente de cambio</span> , dispuesta a invertir mi tiempo y conocimientos para contribuir positivamente al mundo que me rodea.</p>
+                            <br>
+                            <p class="textoCentrado">👀</p>
+                            <p class="textoCentrado"> Scrollea y chusmea mis <span class="floresSpan"> proyectos. </span> </p>
                         </div>
                     </div>
                 </div>
-            </div> 
+            </section> 
 
-            <div class="sobreMiDos"> <!-- ======== Sobre Mi 3-->
+            <section class="sobreMi sobreMiTres"> <!-- ======== Sobre Mi 3-->
                 <h2> Mis habilidades</h2>
                 <div class="tabInfo">
                     <div class="tabs1">
@@ -162,10 +169,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- EXPERIENCIA  -->
-            <section class="sobreMiDos">
+            <section class="sobreMi">
                 <h2> Mis habilidades</h2>
                 <div class="tab-container">
                     <div class="tab-list">
@@ -201,7 +208,7 @@
             </section>
 
             <!-- PROYECTOS -->
-            <section class="sobreMiDos">
+            <section id="proyectos" class="sobreMi menujs">
                 <h2> Proyectos </h2>
 
                 <div class="card">
@@ -220,7 +227,7 @@
             
 
             <!-- CONTACTO -->
-            <section id='contacto' class='contactoContainer'>
+            <section id='contacto' class='contactoContainer menujs'>
                 <div class="contactoContainer_title">
                     <h2>Contactame</h2>
                 </div>
@@ -274,7 +281,8 @@
     </main>
 
 
-
+<!-- <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlKFmVnXmrcjkTzRWRKkvmPHLhzBSnmxfCfwLxNBfwhQcXjlrWVhdJNNmHmWKDxlpTvmwL"
+                                            target="_blank"> -->
 
 </body>
 

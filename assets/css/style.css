@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth
 }
 
 html {
@@ -10,21 +11,32 @@ html {
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
     background-color: var(--colorFondo);
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 12px;
+    background-color: var(--colorTitulos);
+    border-radius: 6px;
+}
+
+
+
 
 a {
     text-decoration: none;
 }
 
 a.visited {
-    color: rgb(0, 0, 0);
+    color: var(--colorFondo);
 }
 
 a:active {
-    color: rgb(0, 0, 0);
+    color: var(--colorTitulos);
 }
 
 h1,
@@ -61,10 +73,6 @@ h6 {
 
 /* ================ LandingPage =============== */
 .containerPrincipal {
-    display: grid;
-    /* grid-template-columns: 1fr 6fr;
-    gap: 1.5em; */
-
     position: relative;
     height: 100vh;
 }
@@ -109,6 +117,26 @@ h6 {
     background-color: var(--colorRelleno);
     color: var(--colorTitulos);
     transform: scale(1.1);
+    transition: .3s;
+    border-radius: 1rem;
+}
+
+.containerPrincipal .menu nav>a {
+    font-family: var(--fontNavbar);
+    font-size: var(--fontSize_navbar);
+    font-weight: 500;
+    color: var(--colorTitulos);
+    padding: 1rem;
+    border-radius: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.containerPrincipal .menu nav>a:hover {
+    background-color: var(--colorRelleno);
+    color: var(--colorTitulos);
+    border: 1px solid;
+    transform: scale(1.1);
     transition: .5s;
     border-radius: 1rem;
 }
@@ -142,10 +170,12 @@ h6 {
 }
 
 
+
 /*======= LADO DERECHO */
 
 .home {
     height: 100vh;
+    padding-top: 20px;
 }
 
 .fixedContainer {
@@ -172,6 +202,18 @@ h6 {
     font-size: 6rem;
 }
 
+.fixedContainer .home .cv a {
+    color: #002441;
+    filter: drop-shadow(9px 9px 5px #edb8ae);
+
+}
+
+.fixedContainer .home .cv a:hover {
+    color: var(--colorTitulos);
+    transform: scale(1.4);
+    transition: .5s;
+}
+
 hgroup {
     display: flex;
     flex-direction: column;
@@ -184,7 +226,7 @@ hgroup {
 
 #titulo {
     font-family: var(--fontTitulo);
-    font-size: 10rem;
+    font-size: 11rem;
     font-weight: 600;
     color: var(--colorTitulos);
 }
@@ -198,7 +240,7 @@ hgroup h2 {
 
 #tituloHola {
     font-family: var(--fontTitulo);
-    font-size: 10rem;
+    font-size: 11rem;
     font-weight: 600;
     color: var(--colorTitulos);
 
@@ -220,14 +262,15 @@ hgroup h2 {
 
 /* ============== SOBRE MI */
 
-.sobreMiUno {
+.sobreMi{
+    height: 100vh;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-
-    /* background-color: aquamarine; */
-    height: 90vh;
+}
+.sobreMiUno {
+    justify-content: flex-start;
     gap: 80px;
 }
 
@@ -237,6 +280,7 @@ hgroup h2 {
     border-radius: 40px;
     width: 80%;
     height: 50%;
+
 
     display: flex;
     flex-direction: column;
@@ -254,14 +298,14 @@ hgroup h2 {
     display: flex;
     align-items: center;
     gap: 60px;
-
-    width: 85%;
-    margin-top: 20px;
+    padding: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-.sobreMiUno h2 {
+.sobreMiUno h2 , .sobreMiDos h2 , .sobreMiTres h2 {
     font-family: var(--fontTitulo);
-    font-size: 9rem;
+    font-size: 11rem;
     font-weight: 600;
     color: var(--colorTitulos);
 }
@@ -274,7 +318,7 @@ hgroup h2 {
 
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 60px;
 }
 
 .videoCv {
@@ -290,34 +334,23 @@ hgroup h2 {
     font-size: 2.5rem;
 }
 
+
 /*==== /* TAB Modo Personal & Técnico*/
+
+
 .sobreMiDos {
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 70px;
+    border: 1px solid transparent;
+    margin-bottom: 300px;
 }
 
-.sobreMiDos h2 {
-    font-family: var(--fontTitulo);
-    font-size: 9rem;
-    font-weight: 600;
-    color: var(--colorTitulos);
-}
-
-.paragraph {
-    font-family: var(--fontNavbar);
-    color: var(--colorTitulos);
-    font-size: 2.5rem;
-}
-
-.tabInfo{
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+.tabInfo {
     width: 80%;
     border-radius: 40px;
-    background-color: var(--colorFondo);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 50px;
 }
 
 .tabs {
@@ -325,8 +358,10 @@ hgroup h2 {
     align-items: center;
     align-content: center;
     justify-content: space-evenly;
-    border-bottom: 3px solid black;
     padding: 15px;
+    background-color: var(--colorFondo);
+    border-radius: 40px;
+    border: 2px solid;
 }
 
 h3 {
@@ -335,28 +370,41 @@ h3 {
     cursor: pointer;
     font-weight: 600;
     font-family: var(--fontNavbar);
-    font-size: 2rem;
-    width: 350px;
+    font-size: 3rem;
+    width: 400px;
 }
 
 .tab-content {
     padding: 50px 40px;
     background-color: var(--colorFondo);
     border-radius: 40px;
+    border: 2px solid;
 }
 
 .tab-content h4 {
-    font-size: 28px;
+    font-size: 3rem;
     margin-bottom: 20px;
-    color: #000224;
+    color: var(--colorTitulos);
+    font-family: var(--fontNavbar);
     font-weight: 600;
 }
 
 .tab-content p {
-    text-align: justify;
+    font-family: var(--fontNavbar);
+    color: var(--colorTitulos);
+    font-size: 2rem;
+    /* text-align: justify; */
     line-height: 1.9;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.8px;
     color: #202238;
+}
+
+.floresSpan{
+    font-weight: bold;
+}
+
+.textoCentrado{
+    text-align: center;
 }
 
 .tab-content div {
@@ -371,12 +419,18 @@ h3 {
     background-color: var(--colorTitulos);
     color: var(--colorFondo);
     border-radius: 40px;
-    padding: 17px;
+    padding: 9px;
     width: 350px;
 }
 
 
 /* duras blandas */
+
+.sobreMiTres {
+    border: 1px solid transparent;
+    margin-top: 450px;
+    gap: 70px;
+}
 
 .tabs1 {
     display: flex;
@@ -385,22 +439,16 @@ h3 {
     justify-content: space-evenly;
     border-bottom: 3px solid black;
     padding: 15px;
-}
-
-h3 {
-    text-align: center;
-    padding: 15px 0;
-    cursor: pointer;
-    font-weight: 600;
-    font-family: var(--fontNavbar);
-    font-size: 2rem;
-    width: 350px;
+    background-color: var(--colorFondo);
+    border-radius: 40px;
+    border: 2px solid;
 }
 
 .tab-content1 {
     padding: 50px 40px;
     background-color: var(--colorFondo);
     border-radius: 40px;
+    border: 2px solid;
 }
 
 .tab-content1 h4 {
@@ -500,15 +548,15 @@ h3 {
 }
 
 /*================= Proyecto*/
-.card{
+.card {
     border: 2px solid var(--colorTitulos);
     border-radius: 20px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     width: 70%;
 }
 
-.cardImg img{
+.cardImg img {
     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
