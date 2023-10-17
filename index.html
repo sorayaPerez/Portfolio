@@ -68,7 +68,7 @@
                     </a>
                 </li>
                 <li class="navItem">
-                    <a href="#contactame" class="navLink">
+                    <a href="#contacto" class="navLink">
                         <i class="fa-solid fa-envelope"></i>
                         <span class="linkText"> Contacto </span>
                     </a>
@@ -302,7 +302,7 @@
             <div class="proyectosChicos">
                 <div class="cardPequeña">
                     <div class="cardImg">
-                        <img src="./assets/img/portfolio.png" alt="Foto del proyecto" />
+                        <a href="https://github.com/sorayaPerez/Portfolio" target="_blank"><img src="./assets/img/portfolio.png" alt="Foto del proyecto" /></a>
                     </div>
                     <div class="cardInfo">
                         <div class="titular">
@@ -330,35 +330,23 @@
 
 
         <!-- CONTACTO -->
-        <!-- <section id='contacto' class='contactoContainer menujs'>
-            <div class="contactoContainer_title">
+        <section id='contacto' class='contactoContainer'>
+            <div class="contactoTitulo">
                 <h2>Contactame</h2>
             </div>
 
-            <form class='contactoContainer_form'>
-                <div class='contactoContainer_form-input'>
-                    <label htmlFor="nombre">Nombre</label>
-                    <input autoComplete='off' type="text" name='nombre' id='nombre' placeholder='nombre' required
-                        minlength="3" />
-                </div>
+            <form class='contactoContainerForm'>
+                    <input type="text" id='nombre' placeholder='nombre' required >
 
-                <div class='contactoContainer_form-input'>
-                    <label htmlFor="email">Email</label>
-                    <input autoComplete='off' type="email" name='email' id='email' placeholder='email' required />
-                </div>
+                    <input type="email" id='email' placeholder='email' required >
 
-                <div class='contactoContainer_form-input'>
-                    <label htmlFor="mensaje">Mensaje</label>
-                    <input autoComplete='off' type="text" name='mensaje' id='mensaje' placeholder='mensaje' required
-                        minlength="4" />
-                </div>
+                    <textarea id="mensaje" cols="30" rows="10" required></textarea>
 
-                <div class='contactoContainer_form-btn'>
                     <button type='submit'>Enviar</button>
-                </div>
+
             </form>
             <span id="mensajeForm">El mensaje ha sido enviado correctamente!</span>
-        </section> -->
+        </section>
 
     </main>
 
