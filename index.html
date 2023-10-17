@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Soraya Perez </title>
+    <title>Soraya Perez</title>
 
     <!-- ===================  CSS ==================== -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -26,263 +26,346 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- JAVASCRIPT -->
-    <script defer src="./assets/js/main.js"></script>
-    <script defer src="./assets/js/nav.js"></script>
+    <script defer src="./assets/js/index.js"></script>
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="./assets/img/flor.ico" type="image/x-icon">
+
 
 </head>
 
 <body>
 
-    <main class="containerPrincipal">
-        <!-- ======== Lado izquierdo -->
-        <header class="menu">
-            <figure>
-                <img src="./assets/img/logosoraya.png" alt="">
-            </figure>
-            <nav class="navbar">
-                <a class="enlaces" href="#inicio"> <i class="fa-solid fa-house"></i> Inicio </a>
-                <a class="enlaces" href="#sobremi"> <i class="fa-solid fa-user"></i> Sobre Mi </a>
-                <a class="enlaces" href="#proyectos"> <i class="fa-solid fa-laptop-code"></i> Proyectos </a>
-                <a class="enlaces" href="#contacto"> <i class="fa-solid fa-envelope"></i> Contacto </a>
-            </nav>
-            <div class="containerRedes">
-                <a class="enlaces" href="https://github.com/sorayaPerez" target="_blank"> <i class="fa-brands fa-github"></i> </a>
-                <a class="enlaces" href="https://www.linkedin.com/in/sorayaperezin/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+    <section class="menuContainer">
+        <figure class="imgActive">
+            <img src="./assets/img/floractive.png" alt="">
+        </figure>
+
+        <figure class="imgInactive">
+            <img src="./assets/img/logosoraya.png" alt="">
+        </figure>
+
+
+        <nav class="navbar">
+            <ul class="navbarNav">
+                <li class="navItem">
+                    <a href="#inicio" class="navLink">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="linkText"> Inicio </span>
+                    </a>
+                </li>
+
+                <li class="navItem">
+                    <a href="#sobremi" class="navLink">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="linkText"> Sobre Mi </span>
+                    </a>
+                </li>
+                <li class="navItem">
+                    <a href="#proyectos" class="navLink">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <span class="linkText"> Proyectos </span>
+                    </a>
+                </li>
+                <li class="navItem">
+                    <a href="#contactame" class="navLink">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="linkText"> Contacto </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="navRedes">
+            <ul class="navbarRedes">
+                <li class="navItem">
+                    <a href="#" class="navLink">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+
+                <li class="navItem">
+                    <a href="#" class="navLink">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <main class="fixedContainer">
+
+        <!-- ======== HOME  ========== -->
+        <section id="inicio" class="home">
+            <div class="cv">
+                <a href="./assets/pdf/Soraya Perez.pdf" target="_blank"> * <i class="fa-solid fa-file"></i> </a>
             </div>
-        </header>
+            <hgroup>
+                <h2> <span id="tituloHola">Hola,</span> me dicen Sori y soy una</h2>
+                <h1 id="titulo"> Full stack Developer <span class="junior"> Jr</span></h1>
+            </hgroup>
+            <div class="experienciaCv">
+                <p>* Conocé mi experiencia</p>
+            </div>
+        </section>
 
 
-        <!-- ======== Lado derecho -->
-        <section class="fixedContainer">
-            <section id="inicio"  class="home menujs"> <!-- ======== Landing Page -->
-                <div class="cv">
-                    <a href="./assets/pdf/Soraya Perez.pdf" target="_blank"> * <i class="fa-solid fa-file"></i> </a>
-                </div>
-                <hgroup>
-                    <h2> <span id="tituloHola">Hola,</span> me dicen Sori y soy una</h2>
-                    <h1 id="titulo"> Full stack Developer <span class="junior"> Jr</span></h1>
-                </hgroup>
-                <div class="experienciaCv">
-                    <p>* Conocé mi experiencia</p>
-                </div>
-            </section>
-
-
-
-
-            <section id="sobremi" class="sobreMi sobreMiUno menujs"> <!-- ======== Sobre Mi -->
-                <h2>Soraya Perez</h2>
-                <div class="cocoonSobreMi">
-                    <div class="infoSobreMi">
-                        <img src="./assets/img/profile-pic.png" alt="Foto Soraya Perez">
-                        <div class="textoSobreMi">
-                            <p>  Apasionada de lo que hago, busco en cada línea de código el potencial de marcar una
-                                diferencia significativa en la vida de las personas. </p>
-                            <div class="videoCv">
-                                <p class="infoConocerme typing-demo"> ¡Te invito a conocerme un poquito más!</p>
-                                <span>Video CV</span>
-                            </div>
+        <!-- ======== SOBRE MI UNO========== -->
+        <section id="sobremi" class="sobreMi sobreMiUno">
+            <h2>Soraya Perez</h2>
+            <div class="cocoonSobreMi">
+                <div class="infoSobreMi">
+                    <img src="./assets/img/profile-pic.png" alt="Foto Soraya Perez">
+                    <div class="textoSobreMi">
+                        <p> Apasionada de lo que hago, busco en cada línea de código el potencial de marcar una
+                            diferencia significativa en la vida de las personas. </p>
+                        <div class="videoCv">
+                            <p class="infoConocerme"> ¡Te invito a conocerme un poquito más!</p>
+                            <span>Video CV</span>
                         </div>
                     </div>
                 </div>
-            </section> <!-- ======== Fin Sobre Mi UNO-->
+            </div>
+        </section> <!-- ======== Fin Sobre Mi UNO-->
 
 
-            <section class="sobreMi sobreMiDos"> <!-- ======== Sobre Mi 2-->
-                <h2>Sobre Mi</h2>
-                <div class="tabInfo">
-                    <div class="tabs">
-                        <h3 class="active">Técnico</h3>
-                        <h3>Personal</h3>
+        <!-- ======== SOBRE MI DOS-->
+        <section class="sobreMi sobreMiDos">
+            <h2>Sobre Mi</h2>
+            <div class="tabInfo">
+                <div class="tabs">
+                    <h3 class="active">Técnico</h3>
+                    <h3>Personal</h3>
+                </div>
+                <div class="tab-content">
+                    <div class="active">
+                        <h4>¡Holo Mundo!</h4>
+                        <p> • Como programadora <span class="floresSpan">MERN</span> , mi principal prioridad es la
+                            excelencia en la estructura del código, la claridad y la experiencia del usuario.</p>
+                        <br><br>
+                        <p> • Mi pasión por lo que hago se refleja en mi dedicación constante a la adquisición de nuevos
+                            conocimientos y habilidades. Me sumerjo en <span class="floresSpan">las mejores prácticas,
+                                la escalabilidad y la optimización</span>, siempre en busca de superar mis propios
+                            estándares.</p>
+                        <br><br>
+                        <p> ► Mi meta es ser parte de <span class="floresSpan"> proyectos innovadores y desafiantes
+                            </span> que pongan a prueba los límites de mis conocimientos y habilidades. Y si no los
+                            encuentro? Estoy dispuesta a crearlos!</p>
+                        <br><br><br>
+                        <p class="textoCentrado">Te invito a comprobar mi compromiso y experiencia a través de mis <span
+                                class="floresSpan">proyectos</span> .</p>
                     </div>
-                    <div class="tab-content">
-                        <div class="active">
-                            <h4>¡Holo Mundo!</h4>
-                            <p> • Como programadora <span class="floresSpan">MERN</span> , mi principal prioridad es la excelencia en la estructura del código, la claridad y la experiencia del usuario.</p>
-                            <br><br>
-                            <p> • Mi pasión por lo que hago se refleja en mi dedicación constante a la adquisición de nuevos conocimientos y habilidades. Me sumerjo en <span class="floresSpan">las mejores prácticas, la escalabilidad y la optimización</span>, siempre en busca de superar mis propios estándares.</p>
-                            <br><br>
-                            <p> ► Mi meta es ser parte de <span class="floresSpan"> proyectos innovadores y desafiantes </span> que pongan a prueba los límites de mis conocimientos y habilidades. Y si no los encuentro, estoy dispuesta a crearlos yo misma.</p>
-                            <br><br><br>
-                            <p class="textoCentrado">Te invito a comprobar mi compromiso y experiencia a través de mis <span class="floresSpan">proyectos</span> .</p>
-
-                            
-                        </div>
-                        <div class="sobreMiFlores">
-                            <h4> A tirarme 🌺</h4>
-                            <p>Ser desarolladora me permite vincular 4 cosas que  <span class="floresSpan">me definen como persona:</span> </p>
-                            <br>
-                            <p class="textoCentrado"> 🎨 Mi lado artistico</p>
-                            <p class="textoCentrado"> 🤝Ayudar a las personas</p>
-                            <p class="textoCentrado"> 📚 Desafios constantes</p>
-                            <p class="textoCentrado"> 👋 Conocer gente</p>
-                            <br>
-                            <p> 👉Me encanta compartir mi camino con otros Devs y aprender tanto como pueda de ellos. <span class="floresSpan"> Mi entusiasmo, calidez y pasión </span>  son recursos que aporto en cada interacción. </p>
-                            <br><br>
-                            <p class="textoCentrado">Y sí... mis conocimientos también!</p> 
-                            <br><br>
-                            <p>👉 Mi objetivo principal es ser un <span class="floresSpan">agente de cambio</span> , dispuesta a invertir mi tiempo y conocimientos para contribuir positivamente al mundo que me rodea.</p>
-                            <br>
-                            <p class="textoCentrado">👀</p>
-                            <p class="textoCentrado"> Scrollea y chusmea mis <span class="floresSpan"> proyectos. </span> </p>
-                        </div>
+                    <div class="sobreMiFlores">
+                        <h4> A tirarme 🌺</h4>
+                        <p>Ser desarolladora me permite vincular 4 cosas que <span class="floresSpan">me definen como
+                                persona:</span> </p>
+                        <br>
+                        <p class="textoCentrado"> 🎨 Mi lado artistico</p>
+                        <p class="textoCentrado"> 🤝Ayudar a las personas</p>
+                        <p class="textoCentrado"> 📚 Desafios constantes</p>
+                        <p class="textoCentrado"> 👋 Conocer gente</p>
+                        <br>
+                        <p> 👉Me encanta compartir mi camino con otros Devs y aprender tanto como pueda de ellos. <span
+                                class="floresSpan"> Mi entusiasmo, calidez y pasión </span> son recursos que aporto en
+                            cada interacción. </p>
+                        <br><br>
+                        <p class="textoCentrado">Y sí... mis conocimientos también!</p>
+                        <br><br>
+                        <p>👉 Mi objetivo principal es ser un <span class="floresSpan">agente de cambio</span> ,
+                            dispuesta a invertir mi tiempo y conocimientos para contribuir positivamente al mundo que me
+                            rodea.</p>
+                        <br>
+                        <p class="textoCentrado">👀</p>
+                        <p class="textoCentrado"> Scrollea y chusmea mis <span class="floresSpan"> proyectos. </span>
+                        </p>
                     </div>
                 </div>
-            </section> 
+            </div>
+        </section>
 
-            <section class="sobreMi sobreMiTres"> <!-- ======== Sobre Mi 3-->
-                <h2> Mis habilidades</h2>
-                <div class="tabInfo">
-                    <div class="tabs1">
-                        <h3 class="active1"> Duras</h3>
-                        <h3> Blandas </h3>
+        <section class="sobreMi sobreMiTres"> <!-- ======== Sobre Mi 3-->
+            <h2> Mis habilidades</h2>
+            <div class="tabInfo">
+                <div class="tabs1">
+                    <h3 class="active1"> Duras</h3>
+                    <h3> Blandas </h3>
+                </div>
+                <div class="tab-content1">
+                    <div class="active1">
+                        <h4>hola</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                            explicabo cum dolores hic possimus aut corrupti quisquam aperiam
+                            quia veniam inventore officiis nam error sunt libero, commodi
+                            architecto reiciendis qui fuga, itaque delectus quidem sequi.
+                            Impedit natus culpa nihil aperiam adipisci aliquam error, suscipit
+                            odio? Error sed esse perspiciatis quasi velit, ratione odit
+                            architecto? Explicabo pariatur.
+                        </p>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, voluptas?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores ipsum eveniet aperiam
+                            nobis aspernatur laudantium explicabo animi molestias commodi cupiditate.</p>
+
                     </div>
-                    <div class="tab-content1">
-                        <div class="active1">
-                            <h4>hola</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                                explicabo cum dolores hic possimus aut corrupti quisquam aperiam
-                                quia veniam inventore officiis nam error sunt libero, commodi
-                                architecto reiciendis qui fuga, itaque delectus quidem sequi.
-                                Impedit natus culpa nihil aperiam adipisci aliquam error, suscipit
-                                odio? Error sed esse perspiciatis quasi velit, ratione odit
-                                architecto? Explicabo pariatur.
-                            </p>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, voluptas?</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores ipsum eveniet aperiam nobis aspernatur laudantium explicabo animi molestias commodi cupiditate.</p>
-                            
-                        </div>
-                        <div>
-                            <h4>hola</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti,
-                                fugiat ab? Accusamus sed a iusto? Placeat incidunt repudiandae vero
-                                magnam nihil tempore quasi earum illum totam aut delectus aliquam
-                                pariatur, iste, qui provident quo voluptatem neque facere id
-                                laudantium aliquid numquam nisi accusantium. Inventore reiciendis
-                                nulla, iste perferendis.
-                            </p>
-                        </div>
+                    <div>
+                        <h4>hola</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti,
+                            fugiat ab? Accusamus sed a iusto? Placeat incidunt repudiandae vero
+                            magnam nihil tempore quasi earum illum totam aut delectus aliquam
+                            pariatur, iste, qui provident quo voluptatem neque facere id
+                            laudantium aliquid numquam nisi accusantium. Inventore reiciendis
+                            nulla, iste perferendis.
+                        </p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- EXPERIENCIA  -->
-            <section class="sobreMi">
-                <h2> Mis habilidades</h2>
-                <div class="tab-container">
-                    <div class="tab-list">
-                        <div class="tab-list-item active3">Opción 1</div>
-                        <div class="tab-list-item">Opción 2</div>
-                        <div class="tab-list-item">Opción 3</div>
-                        <div class="tab-list-item">Opción 4</div>
-                        <div class="tab-list-item">Opción 5</div>
+        <!-- EXPERIENCIA  -->
+        <section class="sobreMi sobreMiCuatro">
+            <h2> Experiencia </h2>
+            <div class="tab-container">
+                <div class="tab-list">
+                    <div class="tab-list-item active3">
+                        <img src="./assets/img/logo-utn.png" alt="">
                     </div>
-                    <div class="tab-content3">
-                        <div class="tab-content-item active3">
-                            <div class="tab-content-heading">Contenido de la Opción 1</div>
-                            <div class="tab-content-paragraph">Este es el contenido de la Opción 1.</div>
-                        </div>
-                        <div class="tab-content-item">
-                            <div class="tab-content-heading">Contenido de la Opción 2</div>
-                            <div class="tab-content-paragraph">Este es el contenido de la Opción 2.</div>
-                        </div>
-                        <div class="tab-content-item">
-                            <div class="tab-content-heading">Contenido de la Opción 3</div>
-                            <div class="tab-content-paragraph">Este es el contenido de la Opción 3.</div>
-                        </div>
-                        <div class="tab-content-item">
-                            <div class="tab-content-heading">Contenido de la Opción 4</div>
-                            <div class="tab-content-paragraph">Este es el contenido de la Opción 4.</div>
-                        </div>
-                        <div class="tab-content-item">
-                            <div class="tab-content-heading">Contenido de la Opción 5</div>
-                            <div class="tab-content-paragraph">Este es el contenido de la Opción 5.</div>
-                        </div>
+                    <div class="tab-list-item">
+                        <img src="./assets/img/benowu.png" alt="">
+                    </div>
+                    <div class="tab-list-item">
+                        <img src="./assets/img/codoacodo.png" alt="">
+                    </div>
+                    <div class="tab-list-item">
+                        <img src="./assets/img/logo-utn.png" alt="">
+                    </div>
+                    <div class="tab-list-item">
+                        <img src="./assets/img/Logo_exactas.svg.png" alt="">
                     </div>
                 </div>
-            </section>
-
-            <!-- PROYECTOS -->
-            <section id="proyectos" class="sobreMi menujs">
-                <h2> Proyectos </h2>
-
-                <div class="card">
-                    <div class="cardImg">
-                        <img src="./assets/img/proyecto1.png" alt="Foto del proyecto" />
+                <div class="tab-content3">
+                    <div class="tab-content-item active3">
+                        <div class="tab-content-heading">Contenido de la Opción 1</div>
+                        <div class="tab-content-paragraph">Este es el contenido de la Opción 1.</div>
                     </div>
-    
-                    <div class="cardInfo">
+                    <div class="tab-content-item">
+                        <div class="tab-content-heading">Contenido de la Opción 2</div>
+                        <div class="tab-content-paragraph">Este es el contenido de la Opción 2.</div>
+                    </div>
+                    <div class="tab-content-item">
+                        <div class="tab-content-heading">Contenido de la Opción 3</div>
+                        <div class="tab-content-paragraph">Este es el contenido de la Opción 3.</div>
+                    </div>
+                    <div class="tab-content-item">
+                        <div class="tab-content-heading">Contenido de la Opción 4</div>
+                        <div class="tab-content-paragraph">Este es el contenido de la Opción 4.</div>
+                    </div>
+                    <div class="tab-content-item">
+                        <div class="tab-content-heading">Contenido de la Opción 5</div>
+                        <div class="tab-content-paragraph">Este es el contenido de la Opción 5.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="sobreMi proyectos">
+            <h2> Proyectos </h2>
+
+            <div class="card">
+                <div class="cardImg">
+                    <a href="https://github.com/NahuelBaldi/Nova" target="_blank"> <img src="./assets/img/proyecto1.png" alt="Foto del proyecto" /> </a>
+                    
+                </div>
+                <div class="cardInfo">
+                    <div class="titular">
                         <h3>NOVA</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eos!</p>
-                        <a href="#" target="_blank">Ver mas</a>
+                        <div class="tecnologias">
+                            <p> HTML</p>
+                            <p> CSS </p>
+                            <p> JavaScript</p>
+                            <p> REACT.js </p>
+                        </div>
                     </div>
+                    <p class="proyectosParrafo">Plataforma educativa con Campus virtual incluido</p>
+                    
+                    <div class="trabajoEquipo equipo">
+                        <p class="proyectosParrafo"> Equipo: </p>
+                        <a href=""> <img src="./assets/img/img7.png" alt=""> Candela </a>
+                        <a href=""> <img src="./assets/img/img7.png" alt=""> Marcos </a>
+                        <a href=""> <img src="./assets/img/img7.png" alt=""> Nahuel </a>
+                    </div>
+                    
                 </div>
-            
-            </section> 
-            
+            </div>
 
-            <!-- CONTACTO -->
-            <section id='contacto' class='contactoContainer menujs'>
-                <div class="contactoContainer_title">
-                    <h2>Contactame</h2>
+            <div class="proyectosChicos">
+                <div class="cardPequeña">
+                    <div class="cardImg">
+                        <img src="./assets/img/portfolio.png" alt="Foto del proyecto" />
+                    </div>
+                    <div class="cardInfo">
+                        <div class="titular">
+                            <h3> Portafolio </h3>
+                                <p> HTML</p>
+                                <p> CSS </p>
+                                <p> JavaScript</p>
+                        </div>
+                    </div>
                 </div>
-        
-                <form class='contactoContainer_form'>
-                    <div class='contactoContainer_form-input'>
-                        <label htmlFor="nombre">Nombre</label>
-                        <input 
-                            autoComplete='off' 
-                            type="text" 
-                            name='nombre' 
-                            id='nombre' 
-                            placeholder='nombre' 
-                            required
-                            minlength="3"
-                        />
+
+                <div class="cardPequeña">
+                    <div class="cardImg">
+                        <img src="./assets/img/soon.png" alt="Foto del proyecto" />
                     </div>
-        
-                    <div class='contactoContainer_form-input'>
-                        <label htmlFor="email">Email</label>
-                        <input 
-                            autoComplete='off' 
-                            type="email" 
-                            name='email' 
-                            id='email' 
-                            placeholder='email'
-                            required  
-                            />
+                    <div class="cardInfo">
+                        <div class="titular">
+                            <h3> Diseño UX/UI</h3>
+                        </div>
+                        <p class="proyectosParrafo"> Diseño de una aplicación para Andriod </p>
                     </div>
-        
-                    <div class='contactoContainer_form-input'>
-                        <label htmlFor="mensaje">Mensaje</label>
-                        <input 
-                            autoComplete='off' 
-                            type="text" 
-                            name='mensaje' 
-                            id='mensaje' 
-                            placeholder='mensaje' 
-                            required
-                            minlength="4"
-                        />
-                    </div>
-        
-                    <div class='contactoContainer_form-btn'>
-                        <button type='submit'>Enviar</button>
-                    </div>
-                </form>
-                <span id="mensajeForm">El mensaje ha sido enviado correctamente!</span>
-            </section>
-        </section> <!-- ======== FIN Lado derecho -->
+                </div>
+
+        </section>
+
+
+        <!-- CONTACTO -->
+        <!-- <section id='contacto' class='contactoContainer menujs'>
+            <div class="contactoContainer_title">
+                <h2>Contactame</h2>
+            </div>
+
+            <form class='contactoContainer_form'>
+                <div class='contactoContainer_form-input'>
+                    <label htmlFor="nombre">Nombre</label>
+                    <input autoComplete='off' type="text" name='nombre' id='nombre' placeholder='nombre' required
+                        minlength="3" />
+                </div>
+
+                <div class='contactoContainer_form-input'>
+                    <label htmlFor="email">Email</label>
+                    <input autoComplete='off' type="email" name='email' id='email' placeholder='email' required />
+                </div>
+
+                <div class='contactoContainer_form-input'>
+                    <label htmlFor="mensaje">Mensaje</label>
+                    <input autoComplete='off' type="text" name='mensaje' id='mensaje' placeholder='mensaje' required
+                        minlength="4" />
+                </div>
+
+                <div class='contactoContainer_form-btn'>
+                    <button type='submit'>Enviar</button>
+                </div>
+            </form>
+            <span id="mensajeForm">El mensaje ha sido enviado correctamente!</span>
+        </section> -->
+
     </main>
 
 
-<!-- <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlKFmVnXmrcjkTzRWRKkvmPHLhzBSnmxfCfwLxNBfwhQcXjlrWVhdJNNmHmWKDxlpTvmwL"
-                                            target="_blank"> -->
+
+
+
 
 </body>
 
