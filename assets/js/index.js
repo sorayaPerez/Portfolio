@@ -1,7 +1,17 @@
-
 //===== TAB
 let tabs = document.querySelectorAll(".tabs h3");
 let tabContents = document.querySelectorAll(".tab-content div");
+
+let tabs1 = document.querySelectorAll(".tabs1 h3");
+let tabContents1 = document.querySelectorAll(".tab-content1 div");
+
+let tabItems = document.querySelectorAll(".tab-list-item");
+let tabContentItems = document.querySelectorAll(".tab-content-item");
+
+//EMAIL
+const btn = document.getElementById('button');
+
+//===== TAB
 tabs.forEach((tab, index) => {
     tab.addEventListener("click", () => {
         tabContents.forEach((content) => {
@@ -15,8 +25,7 @@ tabs.forEach((tab, index) => {
     });
 });
 
-let tabs1 = document.querySelectorAll(".tabs1 h3");
-let tabContents1 = document.querySelectorAll(".tab-content1 div");
+
 tabs1.forEach((tab, index) => {
     tab.addEventListener("click", () => {
         tabContents1.forEach((content) => {
@@ -31,17 +40,39 @@ tabs1.forEach((tab, index) => {
 });
 
 // TAB EXPERIENCIA
-let tabItems = document.querySelectorAll(".tab-list-item");
-        let tabContentItems = document.querySelectorAll(".tab-content-item");
-        tabItems.forEach((item, index) => {
-            item.addEventListener("click", () => {
-                tabContentItems.forEach((content) => {
-                    content.classList.remove("active3");
-                });
-                tabItems.forEach((tab) => {
-                    tab.classList.remove("active3");
-                });
-                tabContentItems[index].classList.add("active3");
-                tabItems[index].classList.add("active3");
-            });
+
+tabItems.forEach((item, index) => {
+    item.addEventListener("click", () => {
+        tabContentItems.forEach((content) => {
+            content.classList.remove("active3");
         });
+        tabItems.forEach((tab) => {
+            tab.classList.remove("active3");
+        });
+        tabContentItems[index].classList.add("active3");
+        tabItems[index].classList.add("active3");
+    });
+});
+
+// EMAIL
+
+
+
+document.getElementById('form')
+    .addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        btn.value = 'Sending...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_2alvtog';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                btn.value = 'Send Email';
+                alert('El mensaje se envió con exito!');
+            }, (err) => {
+                btn.value = 'Send Email';
+                alert(JSON.stringify(err));
+            });
+    });
